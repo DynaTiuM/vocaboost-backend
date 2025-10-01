@@ -60,7 +60,7 @@ public class UserService {
         try {
             idToken = verifier.verify(idTokenString);
         } catch (Exception e) {
-            logger.error("Erreur lors de la vérification du token : {}", e.getMessage(), e);
+            logger.error("Error while verifying the token: {}", e.getMessage(), e);
             throw e;
         }
 
